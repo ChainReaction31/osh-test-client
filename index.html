@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+    <!-- VENDOR -->
+    <link rel="stylesheet" href="vendor/vendor.min.css"/>
+    <script type="text/javascript" src="vendor/vendor-debug.js"></script>
+
+
+    <!-- OSH Toolkit -->
+    <link rel="stylesheet" type="text/css" href="css/osh.min.css"/>
+    <script type="text/javascript" src="js/osh-debug.js"></script>
+
+    <!-- Demo Config File-->
+    <script src="client.js"></script>
+<!--    <link rel="stylesheet" type="text/css" href="demo-style.css">-->
+
+    <!-- Circular Nav Menu -->
+<!--    <link rel="stylesheet" href="css/circularNavMenu/font-awesome.min.css"/>-->
+    <!--link rel="stylesheet" href="css/circularNavMenu/common.min.css" /-->
+<!--    <link rel="stylesheet" href="css/circularNavMenu/circle-menu.css"/>-->
+<!--    <script src="js/circleMenu.min.js"></script>-->
+
+    <title>Video Baseline</title>
+
+</head>
+
+<body onload="init()" id="client-body">
+<div id="grid-main">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://www.opensensorhub.org/">
+                    <img id="osh-logo" src="images/opensensorhub-logo2.png"
+                         style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none;"></a>
+            </div>
+        </div>
+    </nav>
+    <h1 id="preload-txt">Loading...</h1>
+    <div id="main-container" class="osh-container"></div>
+    <div id="entity-disp" class="tree-div"></div>
+    <div id="dialog-container"></div>
+    <div id="camera-view"></div>
+
+<!--    <button id="zoom-toggle-btn" class="btn-inactive" title="Toggle zoom to selected marker" onclick="ZoomSelectionToggle()">Zoom To Selected</button>-->
+</div>
+</body>
+
+</html>
