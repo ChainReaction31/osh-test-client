@@ -917,8 +917,8 @@ let Context = {
                         entityId: parentEntity.id,
                         css: "video",
                         cssSelected: "video-selected",
-                        width: 360,
-                        height: 300
+                        width: 1920,
+                        height: 1080
                     });
                     chartMap.video.view = videoView;
                 }
@@ -1054,8 +1054,8 @@ let Context = {
                             name: parentEntity.name,
                             // useWorker:useFFmpegWorkers,
                             useWorker: true,
-                            width: 800,
-                            height: 600
+                            width: 1920,
+                            height: 1080
                         });
                     } else if (videoType === 'mjpeg' || typeof videoType === "undefined") {
                         console.log('Creating mjpeg view');
@@ -1064,8 +1064,8 @@ let Context = {
                             entityId: parentEntity.id,
                             css: "video",
                             cssSelected: "video-selected",
-                            width: 704,
-                            height: 480
+                            width: 1920,
+                            height: 1080
                         });
                     } else if (videoType === 'mp4') {
                         videoView = new OSH.UI.Mp4View(videoDialog.popContentDiv.id, {
@@ -1073,8 +1073,8 @@ let Context = {
                             entityId: parentEntity.id,
                             css: "video",
                             cssSelected: "video-selected",
-                            width: 800,
-                            height: 600
+                            width: 1920,
+                            height: 1080
                         });
                     }
                     if (typeof (dataSources.sps) !== "undefined") {
